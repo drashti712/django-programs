@@ -1,0 +1,15 @@
+{% extends 'base.html' %}
+
+{% block content %}
+  
+<h1>Welcome to my contact us page</h1>
+ <form method="post" action='/formprocess'>
+    {% csrf_token %}
+    No1 : <input type='number' name='txt1' required />
+    No2 : <input type='number' name='txt2' required />
+    <input type="submit"/>
+
+    </form>
+
+
+{% endblock %}
